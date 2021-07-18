@@ -9,8 +9,12 @@ I use Ubuntu Server 20.04 LTS, so all tutorials will be based on this.
 ## Contents
 ### Ubuntu Stuff
 This contains the tutorials & guides related to the OS itself.
-
-[*Link*](Ubuntu.md)
+- [Change Ubuntu Hostname](Ubuntu.md/#change-ubuntu-hostname)
+- [Change Locale & Timezone](Ubuntu.md/$change-locale--timezone)
+- [Unattended Upgrades](Ubuntu.md/#unattended-upgrades)
+- [Change SSH Port](Ubuntu.md/#change-ssh-port)
+- [Disable password authentication](Ubuntu.md/#disable-password-authentication)
+- [Check logs of a particular service](Ubuntu.md/#check-logs-of-a-particular-service)
 
 ### ddclient
 Because the tutorials on ddclient online are mostly extemely convoluted and fairly outdated, this is my own guide.
