@@ -28,11 +28,11 @@ This version of the tutorial is verified to work with Cloudflare & ddclient 3.9.
     nano /etc/ddclient/ddclient.conf
     ```
 6. Uncomment the following line by removing the `#` at the start of the line. This checks your public IP address by checking the specified website.
-    ```
+    ```conf
     use=web, web=checkip.dyndns.org/, web-skip='IP Address’
     ```
 7. Now find the following in the config file and fill in your own details. I won't cover how to get these information.
-    ```py
+    ```conf
     protocol=cloudflare,        \
     zone=$domain.tld,            \
     login=$your@cloudflare.login,     \

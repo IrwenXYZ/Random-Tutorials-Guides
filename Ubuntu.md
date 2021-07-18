@@ -16,8 +16,7 @@ Reconnect after doing all steps.
     ```
 2. Set timezone using `timedatectl`.
     ```bash
-    timedatectl list-timezones
-    # the above is to check which timezone you should change to.
+    timedatectl list-timezones # this is to check which timezone you should change to
     timedatectl set-timezone Asia/Singapore
     ```
 ## Unattended Upgrades
@@ -32,7 +31,7 @@ Reconnect after doing all steps.
 3. Go to the config file `nano /etc/apt/apt.conf.d/50unattended-upgrades`.
 
     Uncomment this line.
-    ```
+    ```conf
     Unattended-Upgrade::Remove-New-Unused-Dependencies "true";
     ```
 4. Dry run the configuration.
@@ -64,7 +63,7 @@ Reconnect after doing all steps.
     nano /etc/ssh/sshd_config
     ```
 2. Set the following settings & save the file.
-    ```
+    ```conf
     ChallengeResponseAuthentication no
     PasswordAuthentication no
     PermitRootLogin no
@@ -79,7 +78,7 @@ Reconnect after doing all steps.
     visudo /etc/sudoers.d/90-cloud-init-users
     ```
 5. Add the following line & save the file.
-    ```
+    ```conf
     <your_username> ALL=(ALL) NOPASSWD:ALL
     ```
 
