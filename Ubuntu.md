@@ -44,7 +44,7 @@ Reconnect after doing all steps.
     ```
 
 ## SSH
-### Changing SSH Ports
+### Change SSH Port
 1. Enter the SSH configuration file.
     ```
     nano /etc/ssh/sshd_config
@@ -56,7 +56,7 @@ Reconnect after doing all steps.
     systemctl restart ssh
     ```
 
-### Disabling password authentication
+### Disable password authentication
 **Make sure you have configured your public key in `.ssh` before doing this**
 1. Enter the SSH configuration file.
     ```
