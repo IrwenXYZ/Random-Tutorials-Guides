@@ -1,7 +1,9 @@
 # ddclient
 "Ddclient is a Perl client used to update dynamic DNS entries for accounts on 'Dynamic DNS Network Services' free DNS service."
 
-Because the tutorials on ddclient online are mostly extemely convoluted and fairly outdated, I'm creating my own tutorial for this. This version of the tutorial is verified to work with Cloudflare & ddclient 3.9.1.
+Because the tutorials on ddclient online are mostly extemely convoluted and fairly outdated, I'm creating my own tutorial for this.
+
+This version of the tutorial is verified to work with Cloudflare & ddclient 3.9.1.
 
 1. Download ddclient 3.9.1 to your local machine.
    ```
