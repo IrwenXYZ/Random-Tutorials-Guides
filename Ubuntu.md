@@ -84,5 +84,5 @@ Reconnect after doing all steps.
 
 ## Check logs of a particular service
 ```
-journalctl service-name.service
+journalctl -u service-name.service
 ```
