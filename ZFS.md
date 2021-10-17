@@ -10,15 +10,17 @@ I use ZFS to manage my hard drives outside of the boot drive, so this is everyth
 
 
 ## Set size for volumes
-1. Check the current quota for each volume.
+1. Check the current quota & reservation for each volume.
    ```
    zfs get quota
+   zfs get reservation
    ```
-2. Increase the quota.
+2. Increase the quota & reservation.
    ```
    zfs set quota=<new quota> path/of/volume
    zfs set reservation=<new quota> path/of/volume
    ```
+   You can use the quota property to set a limit on the amount of disk space a file system can use. In addition, you can use the reservation property to guarantee that a specified amount of disk space is available to a file system. Both properties apply to the dataset on which they are set and all descendents of that dataset.
 
 ## Mounting volumes
 By default, volumes are mounted to `/<poolname>/<volume name>`, but we can change this.
