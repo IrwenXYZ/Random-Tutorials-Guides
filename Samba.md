@@ -10,9 +10,15 @@ Tutorials & guides to get Samba working.
    ```
    mkdir /path/to/directory
    ```
+   
+   Now set ownership to be yourself
+   ```
+   chown -R yourusername:yourusername /path/to/directory
+   ```
+
    You'll need to set the permissions of the directory to `775`
    ```
-   chmod 777 /path/to/directory
+   chmod 775 /path/to/directory
    ```
 3. Configure Samba
    *This adds the directory as a Samba shared drive.*
