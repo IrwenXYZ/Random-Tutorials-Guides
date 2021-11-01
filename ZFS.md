@@ -1,6 +1,16 @@
 # ZFS
 I use ZFS to manage my hard drives outside of the boot drive, so this is everything I've learnt about ZFS. Very incomplete.
 
+## Creating a pool
+1. First, you need to determine which drives you're using, and which ZFS RAID type you'll be using. For our purposes, we'll be using RAID-Z1
+   ```
+   lsblk
+   ```
+2. After determining the drives you'll be using, you can create your pool.
+   ```
+   zpool create <pool name> <disk1> <disk2> <disk3>
+   ```
+
 ## Creating a volume
 1. We first need to create the volume
    ```

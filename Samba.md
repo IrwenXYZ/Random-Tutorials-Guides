@@ -35,7 +35,7 @@ Tutorials & guides to get Samba working.
    ```
 4. Restart Samba
    ```
-   service smbd restart
+   systemctl restart smbd
    ```
 5. Set user & password
    *Note that username used must belong to a system account, else it won't save.*
