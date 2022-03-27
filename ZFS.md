@@ -29,13 +29,13 @@ I use ZFS to manage my hard drives outside of the boot drive, so this is everyth
 ## Set size for volumes
 1. Check the current quota & reservation for each volume.
    ```
-   zfs get reservation path/to/pool
    zfs get quota path/to/pool
+   zfs get reservation path/to/pool
    ```
 2. Increase the quota & reservation.
    ```
-   zfs set reservation=<new quota>g path/of/volume
    zfs set quota=<new quota>g path/of/volume
+   zfs set reservation=<new quota>g path/of/volume
    ```
    The quota amount cannot be less than the currently used or reserved space.  
 
